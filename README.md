@@ -1,15 +1,15 @@
 ## **jump** docker image
 
-Creates a minimal alpine linux container with usefull utilities and DNS lookup related tools. Notable included tools are:
+Creates a minimal alpine linux container with useful utilities and DNS lookup related tools. Notable included tools are:
 
-`sh`
-`bash`
-`curl`
-`jq`
-`nc`
-`dig`
-`nslookup`
-`screen` 
+- `bash`
+- `curl`
+- `dig`
+- `jq`
+- `nc`
+- `nslookup`
+- `screen` 
+- `sh`
 
 The container has no entry-point defined. When using as a docker container, one can start an interactive bash shell like:
 
