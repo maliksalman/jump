@@ -33,7 +33,7 @@ spec:
       - 168h
 ```
 
-The above will create a POD that will stay alive for a week. To create an interactive bash shell, issue the following command:
+The above will create a POD that will stay alive for a week. To create an interactive bash shell in the running POD, issue the following command:
 
 ```
 kubectl exec -it jumpy bash 
