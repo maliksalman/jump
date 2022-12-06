@@ -2,14 +2,11 @@
 
 Creates a minimal alpine linux container with useful utilities and DNS lookup related tools. Notable included tools are:
 
-- `bash`
-- `curl`
-- `dig`
+- `bash`, `sh`, `screen`
+- `curl`, `nc`, `dig`, `nslookup`
+- `ssh`, `ssh-keygen`, etc
 - `jq`
-- `nc`
-- `nslookup`
-- `screen` 
-- `sh`
+- `git`
 
 The container has no entry-point defined. When using as a docker container, one can start an interactive bash shell like:
 
@@ -36,5 +33,5 @@ spec:
 The above will create a POD that will stay alive for a week. To create an interactive bash shell in the running POD, issue the following command:
 
 ```
-kubectl exec -it jumpy bash 
+kubectl exec -it jumpy -- bash 
 ```
