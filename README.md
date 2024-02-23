@@ -4,7 +4,7 @@ Creates a minimal alpine linux container with useful utilities and DNS lookup re
 
 - `bash`, `sh`, `screen`
 - `curl`, `nc`, `dig`, `nslookup`
-- `ssh`, `ssh-keygen`, etc
+- `ssh`, `ssh-keygen`, `openssl`, etc
 - `jq`
 - `git`
 
