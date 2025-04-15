@@ -2,7 +2,7 @@
 
 Creates a minimal alpine linux container with useful utilities and DNS lookup related tools. Notable included tools are:
 
-- `bash`, `sh`, `screen`
+- `bash`, `sh`, `screen`, `tmux`
 - `curl`, `nc`, `dig`, `nslookup`
 - `ssh`, `ssh-keygen`, `openssl`, etc
 - `jq`

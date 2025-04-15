@@ -1,2 +1,9 @@
 #!/bin/bash
-while true; do sleep 1; curl -s $1 | jq . -c; done
+
+while true; do
+    sleep ${LOOP_INTERVAL:-0.5};
+    if [[ -z ${LOOP_SKIP_TIME} ]]; then
+        echo -n "`date +%T` - "
+    fi
+    echo $(curl -m ${LOOP_TIMEOUT:-0.5} -s $1 || echo '{"timeout":true}') | jq . -c
+done
