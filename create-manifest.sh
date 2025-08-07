@@ -6,6 +6,9 @@ if [[ -z $VER ]]; then
     exit 1
 fi
 
+docker pull maliksalman/jump:${VER}-amd64
+docker pull maliksalman/jump:${VER}-arm64
+
 docker manifest rm maliksalman/jump:${VER}
 docker manifest create maliksalman/jump:${VER} maliksalman/jump:${VER}-amd64 maliksalman/jump:${VER}-arm64
 
