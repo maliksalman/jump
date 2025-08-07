@@ -5,7 +5,8 @@ Creates a minimal alpine linux container with useful utilities and DNS lookup re
 - `bash`, `sh`, `screen`, `tmux`
 - `curl`, `nc`, `dig`, `nslookup`
 - `ssh`, `ssh-keygen`, `openssl`, etc
-- `jq`
+- `jq`, `xmlstarlet`
+- `screen`, `tmux`
 - `git`
 
 The container has no entry-point defined. When using as a docker container, one can start an interactive bash shell like:
